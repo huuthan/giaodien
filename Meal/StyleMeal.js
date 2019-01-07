@@ -14,7 +14,15 @@ const  styles=StyleSheet.create({
         marginLeft: 3,
         width:50,
         height: 50,
-        resizeMode:'contain'
+        resizeMode:'contain',
+    },
+    image1:{
+        flex: 1,
+        marginLeft: 3,
+        width:40,
+        height: 40,
+        resizeMode:'contain',
+        tintColor:'#33B3FB',
     },
     textheader:{
         color: 'white',
@@ -28,21 +36,19 @@ const  styles=StyleSheet.create({
         flexDirection: 'row',
         justifyContent: 'center',
         alignItems: 'center',
-        backgroundColor: 'white'
+        backgroundColor: '#fff'
     },
     chooseDate:{
         flex:6,
-        backgroundColor:'#00B2BF',
-        height:'70%',
+        backgroundColor:'#33B3FB',
+        height:50,
         borderRadius: 90,
-        borderWidth: 1,
         justifyContent:'center',
         alignItems:'center'
     },
     textDate:{
         color: 'white',
         alignItems:'center',
-        fontWeight: 'bold',
         fontSize: 17
     },
     content:{
@@ -55,15 +61,23 @@ const  styles=StyleSheet.create({
         flexDirection:'row',
         justifyContent:'center',
         alignItems:'center',
-        marginBottom: 5,
-        backgroundColor:'#A0A0A0',
-        height:HEIGHT/6
+        marginBottom: 9,
+        backgroundColor:'#33B3FB',
+        height:HEIGHT/6,
+        borderRadius: 10,
+        borderWidth: 1.5,
+        borderColor:'#33B3FB',
     },
     dateinweek:{
-        flex:1.5,
-        backgroundColor:'#A0A0A0',
-        height: '100%',
-        textAlignVertical:'center'
+        flex:1.7,
+        // backgroundColor:'#64c3fb',
+        // height: '100%',
+        textAlignVertical:'center',
+        color:'#fff',
+        fontSize:16
+
+
+
     }
 
 

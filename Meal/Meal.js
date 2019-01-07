@@ -36,15 +36,15 @@ class Meal extends Component {
     render() {
         return (
             <View style={{ height:HEIGHT,width: '100%'}}>
-                <View style={{height:HEIGHT/15,justifyContent: 'center',alignItems:'center',backgroundColor: '#F38946',flexDirection: 'row'}}>
+                <View style={{height:HEIGHT/12,justifyContent: 'center',alignItems:'center',backgroundColor: '#33B3FB',flexDirection: 'row'}}>
                     <TouchableOpacity onPress={this.clickBack}>
                         <Image  style={{width:HEIGHT/15,height:HEIGHT/15}} source={require('../src/images/icons8-left-filled-96.png')}/>
                     </TouchableOpacity>
-                    <Text style={{fontWeight: 'bold',color:'white',fontSize:20,width:WIDTH-HEIGHT/15,textAlign: 'center'}}>Khẩu phần ăn</Text>
+                    <Text style={{color:'white',fontSize:20,width:WIDTH-HEIGHT/15,textAlign: 'center', marginLeft: -30}}>Khẩu phần ăn</Text>
                 </View>
                 <View style={Style.dateContaner}>
                     <TouchableOpacity>
-                        <Image source={require('../image/prev.png')} style={Style.image}/>
+                        <Image source={require('../image/prev.png')} style={Style.image1}/>
                     </TouchableOpacity>
                     <View style={Style.chooseDate}>
                         <TouchableOpacity onPress={this._showDateTimePicker}>
@@ -57,7 +57,7 @@ class Meal extends Component {
                         onCancel={this._hideDateTimePicker}
                     />
                     <TouchableOpacity>
-                        <Image source={require('../image/next.png')} style={Style.image}/>
+                        <Image source={require('../image/next.png')} style={Style.image1}/>
                     </TouchableOpacity>
                 </View>
                 <View style={Style.content}>
@@ -73,11 +73,11 @@ class Meal extends Component {
         );
     }
     _renderItem1=({item})=>(
-        <View>
-            <View style={Style.ItemContaner} >
-                <Text style={Style.dateinweek}>{item.day}</Text>
+        <View style={{backgroundColor:"#ECECEC"}}>
+            <TouchableOpacity style={Style.ItemContaner} onPress={()=>Actions.MealDate()}>
+                <Text style={Style.dateinweek}>  {item.day}</Text>
 
-                <View style={{flex:8, backgroundColor:'#ECECEC'}} >
+                <View style={{flex:8, backgroundColor:'#fff', borderRadius: 10}} >
 
                     <View style={{flex:1, flexDirection: 'row', justifyContent: 'center', alignItems: 'center'}}>
                         <TouchableOpacity onPress={()=>Actions.Detailmeal()}>
@@ -90,21 +90,21 @@ class Meal extends Component {
 
                         <Text style={{flex:2}}>{item.mon2}</Text>
                     </View>
-                    <View style={{flex:1, flexDirection: 'row', justifyContent: 'center', alignItems: 'center'}}>
+                    <View style={{flex:1, flexDirection: 'row', justifyContent: 'center', alignItems: 'center' }}>
                         <Image source={item.hinh3} style={Style.image}/>
                         <Text style={{flex:2}}>{item.mon3}</Text>
                         <Image source={item.hinh4} style={Style.image}/>
                         <Text style={{flex:2}}>{item.mon4}</Text>
                     </View>
                 </View>
-                <View style={{flex:0.5, backgroundColor:'#ECECEC', marginLeft: 3}}>
-                    <TouchableOpacity style={{height:'100%', backgroundColor:'#ECECEC', marginLeft: 3,justifyContent: 'center',
-                        alignItems: 'center',}} onPress={()=>Actions.MealDate()}>
-                        <Image source={require('../image/next.png')} style={{width:20, height:20}}/>
-                    </TouchableOpacity>
-                </View>
+                {/*<View style={{flex:0, backgroundColor:'#ECECEC', marginLeft: 3}}>*/}
+                    {/*<TouchableOpacity style={{height:'100%', backgroundColor:'#ECECEC', marginLeft: 3,justifyContent: 'center',*/}
+                        {/*alignItems: 'center',}} onPress={()=>Actions.MealDate()}>*/}
+                        {/*<Image source={require('../image/next.png')} style={{width:20, height:20}}/>*/}
+                    {/*</TouchableOpacity>*/}
+                {/*</View>*/}
 
-            </View>
+            </TouchableOpacity>
 
         </View>
     );

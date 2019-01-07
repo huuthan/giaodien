@@ -12,10 +12,10 @@ export default class Home extends Component {
             data:[
                 {key:'1',name:'Thông tin',uriImage:require('../images/user-4.png'),color:'#F9A620'},
                 {key:'2',name:'Sức khỏe',uriImage:require('../images/icons8-health-calendar-80.png'),color:'#8DC34D'},
-                {key:'3',name:'Khẩu phần ăn',uriImage:require('../images/icons8-meal-80.png'),color:'#ED6360'},
+                {key:'3',name:'Khẩu phần ăn',uriImage:require('../images/icons8-meal-80.png'),color:'#39AFD5', tintColor:'#33B3FB'},
                 {key:'4',name:'Album ảnh',uriImage:require('../images/icons8-photo-gallery-80.png'),color:'#C49FC7'},
                 {key:'5',name:'Hoạt động',uriImage:require('../images/icons8-running-50.png'),color:'#2ecc71'},
-                {key:'6',name:'Liên hệ',uriImage:require('../images/icons8-phone-64.png'),color:'#39AFD5'},
+                {key:'6',name:'Liên hệ',uriImage:require('../images/icons8-phone-64.png'),color:'#ED6360'},//
             ]
         }
     }
@@ -42,7 +42,7 @@ export default class Home extends Component {
         return (
             <View style={{width:WIDTH,height:HEIGHT,backgroundColor:'#fff'}}>
 
-                <TouchableOpacity style={{height:HEIGHT/15,justifyContent: 'center',alignItems:'center',backgroundColor: '#F38946'}}>
+                <TouchableOpacity style={{height:HEIGHT/12,justifyContent: 'center',alignItems:'center',backgroundColor: '#F38946'}}>
                     <Text style={{fontWeight: 'bold',color:'white',fontSize:20}}>Trang chủ</Text>
                 </TouchableOpacity>
                 <View style={{alignItems: 'center'}}>
