@@ -24,27 +24,28 @@ const  styles=StyleSheet.create({
     },
     contentContainer:{
         flex:8.2,
-        backgroundColor: '#ECECEC',
+        backgroundColor: '#fff',
         justifyContent: 'center',
         marginLeft:10,
         marginRight: 10,
-        marginTop: 30
+        marginTop: 10
     },
     btngopy:{
-        flex:1,
-        backgroundColor:'#00CDCD',
+        flex:0.7,
+        backgroundColor:'#33B3FB',
         justifyContent: 'center',
         alignItems: 'center',
-        marginLeft: 40,
-        marginRight: 40,
-        marginTop: 20,
-        marginBottom: 20
+        marginLeft: 10,
+        marginRight: 10,
+        marginTop: 10,
+        marginBottom: 50
 
     },
     txtgopy:{
         textAlign:'center',
         color:'white',
-        fontSize: 17
+        fontSize: 16,
+        fontWeight: 'bold'
     },
     phandaumonan:{
         flex:1,

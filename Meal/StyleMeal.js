@@ -49,7 +49,8 @@ const  styles=StyleSheet.create({
     textDate:{
         color: 'white',
         alignItems:'center',
-        fontSize: 17
+        fontSize: 16,
+        fontWeight:'bold'
     },
     content:{
         flex:8,
@@ -69,12 +70,13 @@ const  styles=StyleSheet.create({
         borderColor:'#33B3FB',
     },
     dateinweek:{
-        flex:1.7,
+        flex:1.6,
         // backgroundColor:'#64c3fb',
         // height: '100%',
         textAlignVertical:'center',
         color:'#fff',
-        fontSize:16
+        fontSize:15,
+        fontWeight:'bold'
 
 
 

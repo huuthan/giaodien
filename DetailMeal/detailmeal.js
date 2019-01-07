@@ -20,17 +20,17 @@ class Detailmeal extends Component {
 
         return (
             <View style={{ height:HEIGHT,width: '100%'}}>
-                <View style={{height:HEIGHT/15,justifyContent: 'center',alignItems:'center',backgroundColor: '#F38946',flexDirection: 'row'}}>
+                <View style={{height:HEIGHT/13,justifyContent: 'center',alignItems:'center',backgroundColor: '#33B3FB',flexDirection: 'row'}}>
                     <TouchableOpacity onPress={this.clickBack}>
                         <Image  style={{width:HEIGHT/15,height:HEIGHT/15}} source={require('../src/images/icons8-left-filled-96.png')}/>
                     </TouchableOpacity>
-                    <Text style={{fontWeight: 'bold',color:'white',fontSize:20,width:WIDTH-HEIGHT/15,textAlign: 'center'}}>Chi tiết</Text>
+                    <Text style={{fontWeight: 'bold',color:'white',fontSize:18,width:WIDTH-HEIGHT/15,textAlign: 'center',marginLeft: -30}}>Chi tiết</Text>
                 </View>
                 <View style={Style.contentContainer}>
                     <View style={Style.phandaumonan}>
                         <Image source={require('../image/meat.png')} style={Style.image}/>
                         <View style={{flex:4}}>
-                            <Text >Thịt kho tàu</Text>
+                            <Text style={{ fontSize:17, fontWeight:'bold'}}>Thịt kho tàu</Text>
                             <Text>Món chính</Text>
                         </View>
 
@@ -39,13 +39,13 @@ class Detailmeal extends Component {
                         <Image  source={require('../image/thitkhotau.jpg')} style={Style.hinhanh}/>
                     </View>
                     <View style={Style.congthuc}>
-                        <Text>Thành phần: </Text>
-                        <Text>- Thịt bắp heo</Text>
-                        <Text>- Trứng vịt</Text>
-                        <Text>- Hành tím</Text>
-                        <Text>- Dừa xiêm</Text>
-                        <Text>- Kẹo đắng</Text>
-                        <Text>- Ớt, hạt tiêu và các gia vị</Text>
+                        <Text style={{ fontSize:16, fontWeight:'bold'}}>Thành phần: </Text>
+                        <Text style={{ fontSize:16}}>- Thịt bắp heo</Text>
+                        <Text style={{ fontSize:16}}>- Trứng vịt</Text>
+                        <Text style={{ fontSize:16}}>- Hành tím</Text>
+                        <Text style={{ fontSize:16}}>- Dừa xiêm</Text>
+                        <Text style={{ fontSize:16}}>- Kẹo đắng</Text>
+                        <Text style={{ fontSize:16}}>- Ớt, hạt tiêu và các gia vị</Text>
 
 
                     </View>

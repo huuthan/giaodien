@@ -39,7 +39,7 @@ export default class App extends Component<Props> {
 
           <Router>
               <Scene key="root">
-                  <Scene key="tabBar" activeBackgroundColor='#F3982C' inactiveBackgroundColor='#eeeeee' tabs hideNavBar={true}>
+                  <Scene key="tabBar" activeBackgroundColor='#fff' inactiveBackgroundColor='#eeeeee' tabs hideNavBar={true}>
                       <Scene key="home" hideNavBar={true} component={Home} icon={iconHome} title='Trang chủ'/>
                       <Scene key="notification" hideNavBar={true}  icon={iconBell} component={Home} title='Thông báo'/>
                     <Scene key="setting" hideNavBar={true} icon={iconSetting} component={Home} title='Cài đặt'/>

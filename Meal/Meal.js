@@ -40,7 +40,7 @@ class Meal extends Component {
                     <TouchableOpacity onPress={this.clickBack}>
                         <Image  style={{width:HEIGHT/15,height:HEIGHT/15}} source={require('../src/images/icons8-left-filled-96.png')}/>
                     </TouchableOpacity>
-                    <Text style={{color:'white',fontSize:20,width:WIDTH-HEIGHT/15,textAlign: 'center', marginLeft: -30}}>Khẩu phần ăn</Text>
+                    <Text style={{fontWeight: 'bold',color:'white',fontSize:18,width:WIDTH-HEIGHT/15,textAlign: 'center', marginLeft: -30}}>Khẩu phần ăn</Text>
                 </View>
                 <View style={Style.dateContaner}>
                     <TouchableOpacity>

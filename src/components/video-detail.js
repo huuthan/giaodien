@@ -37,11 +37,11 @@ export default class VideoDetail extends Component {
         return (
             <View style={{width:WIDTH,height:HEIGHT}}>
                 <ScrollView>
-                    <View style={{height:HEIGHT/15,justifyContent: 'center',alignItems:'center',backgroundColor: '#F38946',flexDirection: 'row'}}>
+                    <View style={{height:HEIGHT/13,justifyContent: 'center',alignItems:'center',backgroundColor: '#53B948',flexDirection: 'row'}}>
                         <TouchableOpacity onPress={this.clickBack}>
                             <Image style={{width:HEIGHT/15,height:HEIGHT/15}} source={require('../images/icons8-left-filled-96.png')}/>
                         </TouchableOpacity>
-                        <Text style={{fontWeight: 'bold',color:'white',fontSize:20,width:WIDTH-HEIGHT/15,textAlign: 'center'}}>Múa chiều lên bản thượng</Text>
+                        <Text style={{fontWeight: 'bold',color:'white',fontSize:18,width:WIDTH-HEIGHT/15,textAlign: 'center',marginLeft: -30}}>Múa chiều lên bản thượng</Text>
                     </View>
                     <View>
                         <View style={{width:WIDTH,height:HEIGHT/3-20,backgroundColor:'red',marginTop: 10}}>
@@ -59,8 +59,8 @@ export default class VideoDetail extends Component {
                             />
                         </View>
                         <View style={{width:WIDTH,height:HEIGHT/8,flexDirection:'row',alignItems:'center'}}>
-                            <View style={{width:'30%',height:'50%',backgroundColor:'#13CE66',borderRadius:4,marginLeft: 10,justifyContent:'center',alignItems:'center'}}>
-                                <Text>Bình luận</Text>
+                            <View style={{width:'30%',height:'50%',backgroundColor:'#64c3fb',borderRadius:4,marginLeft: 10,justifyContent:'center',alignItems:'center'}}>
+                                <Text style={{color:'white',fontWeight:'bold'}}>Bình luận</Text>
                             </View>
                             <View style={{width:'30%',height:'50%',marginLeft: 10,alignItems:'center',flexDirection:'row'}}>
                                 <TouchableOpacity>
@@ -75,19 +75,19 @@ export default class VideoDetail extends Component {
                                     <Image style={{width:WIDTH/8,height:WIDTH/8}} source={require('../images/icons8-male-user-96.png')}/>
                                     <Text>Mẹ An Thái</Text>
                                 </View>
-                                <Text style={{backgroundColor:'#E6F2EB',height:WIDTH/7,padding: 5,borderRadius:4,marginLeft:5}}>Các cháu múa đẹp quá</Text>
+                                <Text style={{backgroundColor:'#fff',height:WIDTH/7,padding: 5,borderRadius:4,marginLeft:5}}>Các cháu múa đẹp quá</Text>
                             </View>
                             <View style={{marginTop:10,marginLeft:5,marginRight:5,width:WIDTH-10,height:'25%',flexDirection:'row',alignItems:'center'}}>
                                 <View style={{alignItems:'center',width:'20%'}}>
                                     <Image style={{width:WIDTH/8,height:WIDTH/8}} source={require('../images/icons8-male-user-96.png')}/>
                                     <Text>Bố Trà My</Text>
                                 </View>
-                                <Text style={{backgroundColor:'#E6F2EB',height:WIDTH/7,padding: 5,borderRadius:4,marginLeft:5}} numberOfLines={4}>Chúc mừng ngày nhà giáo</Text>
+                                <Text style={{backgroundColor:'#fff',height:WIDTH/7,padding: 5,borderRadius:4,marginLeft:5}} numberOfLines={4}>Chúc mừng ngày nhà giáo</Text>
                             </View>
                         </View>
                         <View style={{width:WIDTH,height:HEIGHT/8,flexDirection:'row',alignItems:'center'}}>
                             <Image style={{width:HEIGHT/12,height:HEIGHT/12}} source={require('../images/icons8-male-user-96.png')}/>
-                            <View style={{alignItems:'center',flexDirection:'row',width:WIDTH-HEIGHT/10,height:HEIGHT/12,backgroundColor:'#E6F2EB',borderRadius:20}}>
+                            <View style={{alignItems:'center',flexDirection:'row',width:WIDTH-HEIGHT/10,height:HEIGHT/12,backgroundColor:'#fff',borderRadius:25}}>
                                 <TextInput style={{marginLeft:10,width:'63%'}} placeholder={'Viết bình luận'}></TextInput>
                                 <View style={{flexDirection:'row',marginRight:2,width:'30%',height:'80%',alignItems:'center',justifyContent:'flex-end'}}>
                                     <TouchableOpacity>
